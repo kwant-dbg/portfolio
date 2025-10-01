@@ -1,3 +1,45 @@
+# Personal Portfolio / CP Blog
+
+This is a personal competitive programming and math blog built with Next.js (app router), TypeScript and Tailwind CSS.
+
+Quick local development
+
+1. Install dependencies:
+
+```powershell
+cd d:\dev\portfolio
+npm ci
+```
+
+2. Run development server:
+
+```powershell
+npm run dev
+```
+
+Production build & run
+
+```powershell
+npm run build
+npm run start
+```
+
+Deployment (recommended: Vercel)
+
+- Option A — Vercel Git Integration (recommended):
+  1. Push this repo to GitHub.
+  2. Import the repo in Vercel (https://vercel.com/new) and follow the UI to link the `main` branch.
+  3. Vercel will build and deploy on every push.
+
+- Option B — GitHub Actions (already included):
+  - A workflow is present at `.github/workflows/deploy-vercel.yml` which uses a `VERCEL_TOKEN` secret to trigger Vercel deploys. To use it:
+    1. Create a Vercel token (https://vercel.com/account/tokens).
+    2. In your GitHub repo, go to Settings → Secrets and create `VERCEL_TOKEN` with that token.
+    3. Push to `main` to trigger the workflow.
+
+Notes
+- The site uses Next.js app-router and is optimized for Vercel. Static pages are prerendered during build.
+- If you want exact typography/animation tweaks, tell me which parts to tune (heading sizes, typing speed, spacing) and I will update `src/app/globals.css`.
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
