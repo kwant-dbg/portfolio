@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Hero() {
   const { name, tagline, socials } = site;
   return (
-    <section className="container mx-auto px-6 py-28 flex flex-col items-center text-center">
+    <section className="container mx-auto px-6 py-28 flex flex-col items-center text-center animate-fade-in">
       <div className="max-w-2xl">
         <div className="w-36 h-36 rounded-xl mx-auto mb-6 ring-2 ring-white/6 overflow-hidden">
           <Image src="/avatar.svg" alt="avatar" width={144} height={144} priority className="object-cover" />
